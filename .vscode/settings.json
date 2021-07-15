@@ -1,6 +1,12 @@
 {
   "cSpell.words": [
-    "Decentragram"
+    "Decentragram",
+    "IBEP",
+    "LOTTOSCAPE",
+    "liquified",
+    "pancakeswap",
+    "presale"
   ],
-  "solidity.compileUsingLocalVersion": "/Users/joseph/Freethinker Drive/Dev/Examples/Dapp University/Dapp Instagram/decentragram/soljson-v0.8.0+commit.c7dfd78e.js"
+  "solidity.defaultCompiler": "remote",
+  "solidity.compileUsingLocalVersion": "/Users/joseph/Freethinker Drive/Dev/Contract Work/ScottD/soljson-v0.8.4+commit.c7e474f2.js",
 }

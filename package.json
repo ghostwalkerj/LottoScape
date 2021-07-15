@@ -3,33 +3,11 @@
   "version": "0.1.0",
   "description": "description...",
   "author": "crypto.joe@sovereign.science",
-  "dependencies": {
-    "@nomiclabs/hardhat-waffle": "^2.0.1",
-    "@types/react": "^17.0.11",
-    "@types/react-dom": "^17.0.8",
-    "add": "^2.0.6",
-    "bootstrap": "5.0.2",
-    "chai-as-promised": "7.1.1",
-    "chai-bignumber": "3.0.0",
-    "ethers": "^5.4.0",
-    "hardhat-typechain": "^0.3.5",
-    "identicon.js": "^2.3.3",
-    "ipfs-http-client": "^50.1.2",
-    "react": "17.0.2",
-    "react-bootstrap": "^1.6.1",
-    "react-dom": "17.0.2",
-    "react-scripts": "^4.0.3",
-    "ts-generator": "^0.1.1",
-    "typechain": "^3.0.0"
-  },
   "scripts": {
     "generate-types": "typechain --target=ethers-v5 'abi/*.json'",
     "postinstall": "yarn generate-types",
     "start": "ts-node ./src/index.ts",
     "typecheck": "tsc --noEmit"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": [
     ">0.2%",
@@ -38,19 +16,46 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@typechain/ethers-v5": "^2.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.0",
+    "@openzeppelin/contracts": "^3.2.0",
+    "@symfoni/hardhat-react": "^0.1.14",
+    "@typechain/ethers-v5": "^4.0.0",
     "@types/chai": "^4.2.19",
     "@types/chai-as-promised": "^7.1.4",
-    "@types/expect": "^24.3.0",
     "@types/identicon.js": "^2.3.0",
     "@types/mocha": "^8.2.2",
     "@types/node": "^15.12.5",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.8",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
     "chai": "^4.3.4",
-    "esm": "^3.2.25",
-    "gh-pages": "^3.2.3",
+    "chai-as-promised": "7.1.1",
+    "chai-bignumber": "3.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.0.21",
+    "fs-extra": "^10.0.0",
     "hardhat": "^2.4.1",
-    "mocha": "^9.0.1",
-    "ts-node": "^10.0.0",
-    "typescript": "^4.3.5"
+    "hardhat-deploy": "^0.7.0-beta.44",
+    "hardhat-deploy-ethers": "^0.3.0-beta.7",
+    "hardhat-typechain": "^0.3.4",
+    "mocha": "^7.2.0",
+    "prettier": "^2.3.2",
+    "prettier-config-solidity": "1.4.2",
+    "prettier-eslint": "^12.0.0",
+    "prettier-plugin-solidity": "^1.0.0-beta.13",
+    "solhint": "^3.3.6",
+    "solhint-plugin-prettier": "^0.0.5",
+    "ts-generator": "^0.1.1",
+    "ts-morph": "^9.0.0",
+    "ts-node": "^9.0.0",
+    "typechain": "^4.0.1",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "@pancakeswap2/pancake-swap-core": "^0.1.0",
+    "pancakeswap-peripheral": "^1.1.0-beta.0"
   }
 }
